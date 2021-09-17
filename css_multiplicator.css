@@ -1,0 +1,84 @@
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
+.titre
+{
+    font-family: 'Roboto', sans-serif;
+
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.main_form
+{
+    text-align: center;
+}
+
+header
+{
+    padding-bottom: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: center;
+    background-color: rebeccapurple;
+    height:70px;
+    margin-bottom: 10rem;
+}
+
+p
+{
+margin-bottom: 2rem;
+}
+
+.card{
+    width: 22%;
+    min-width: 150px;
+    min-height: 100px;
+    background: transparent;
+    color:blue;
+    font-size: 1rem;
+    padding: 1em;
+    margin: 0.25em;
+    position: relative;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.card:hover,
+.card:focus {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-front
+{
+    background: wheat;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.results
+{
+
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
